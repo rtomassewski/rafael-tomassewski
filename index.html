@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Rafael Tomassewski - Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="container nav-container">
+            <a href="#home" class="logo">&lt;/Rafael&gt;</a>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contact" class="btn-highlight" onclick="toggleMenu()">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content hidden">
+                <span class="greeting">Olá, mundo. Eu sou</span>
+                <h1>Rafael Tomassewski</h1>
+                <h2 class="typing-effect">Engenheiro de Software Full Stack.</h2>
+                <p>Especializado em transformar problemas complexos em soluções digitais elegantes. Foco em Web (JS/Node) e Mobile (Flutter).</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">Ver Meu Trabalho <i class="fa-solid fa-arrow-down"></i></a>
+                    <a href="#" class="btn-secondary" target="_blank">Baixar CV <i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-padrao">
+            <div class="container hidden">
+                <h2 class="section-title">Tech Stack & Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>Front-End</h3>
+                        <p>HTML5 Semântico, CSS3 Moderno (Flex/Grid), JavaScript (ES6+).</p>
+                    </div>
+                    <div class="skill-card highlight-card">
+                        <i class="fa-brands fa-flutter"></i>
+                        <h3>Mobile (Hybrid)</h3>
+                        <p>Desenvolvimento multiplataforma (iOS/Android) com Flutter & Dart.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h3>Ferramentas</h3>
+                        <p>Git, GitHub, VS Code, Netlify, Figma (básico).</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Engenharia</h3>
+                        <p>Clean Code, Lógica de Programação, Estrutura de Dados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padrao bg-darker">
+            <div class="container hidden">
+                <h2 class="section-title">Projetos Recentes</h2>
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400/0a0a0a/00ff88?text=Print+do+Site+Dentista');"></div>
+                        <div class="project-info">
+                            <h3>Landing Page Odonto Premium</h3>
+                            <ul class="tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JS</li>
+                                <li>Mobile First</li>
+                            </ul>
+                            <p>Página de alta conversão para clínicas. Foco em performance, SEO semântico e integração com WhatsApp.</p>
+                            <div class="project-links">
+                                <a href="https://rtomassewski.github.io/dental-clinic-landing-page/" target="_blank" class="btn-small"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                                <a href="https://github.com/rtomassewski/dental-clinic-landing-page" target="_blank" class="btn-small btn-outline"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://cdn.dribbble.com/users/1615584/screenshots/15710064/media/646876359df3df985c707d7222442434.jpg?resize=800x600&vertical=center');"></div>
+                        <div class="project-info">
+                            <h3>Sistema de Gestão Clínica</h3>
+                            <ul class="tags">
+                                <li>Flutter</li>
+                                <li>TypeScript</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                            <p>Sistema completo de agendamento e gestão de pacientes. App mobile híbrido conectado a uma API robusta em Node/TS.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/rtomassewski/app_clinica" target="_blank" class="btn-small btn-outline">
+                                    <i class="fa-brands fa-github"></i> Front-end
+                                </a>
+                                <a href="https://github.com/rtomassewski/api-centro-terapeutico" target="_blank" class="btn-small btn-outline">
+                                    <i class="fa-brands fa-github"></i> Back-end
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padrao">
+            <div class="container contact-container hidden">
+                <div class="contact-info">
+                    <h2 class="section-title text-left">Vamos Conversar?</h2>
+                    <p>Estou disponível para oportunidades full-time ou projetos freelance desafiadores. Me mande um oi!</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rtomassewski/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rtomassewski" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/5542984130412" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <form name="portfolio-contact" method="POST" data-netlify="true" class="contact-form">
+                    <input type="hidden" name="form-name" value="portfolio-contact">
+                    
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Como posso te ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Enviar Mensagem <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por <strong>Rafael Tomassewski</strong>. Engenharia de Software 2025.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
